@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blossom | Home</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+   <script>
+       ScrollReveal({ reset: true });
+   </script>
+</head>
+<body>
+  <!-- header of the page -->
+  <div id="head">
+    <!-- <button type="button" name="start-teaching" class="yellowBtn">Start Teaching</button> -->
+    <form action="https://www.example.com/payment/success/" method="POST">
+      <script src="https://checkout.razorpay.com/v1/checkout.js"
+              data-key="rzp_test_nDLMgE8doaULb3" // Enter the Key ID generated from the Dashboard
+              data-amount="200000" // INR 200000
+              data-buttontext="Start Teaching"
+              data-name="Blossom"
+              data-description="The online Kindergarten"
+              data-image="./assets/Blossom.png"
+              data-prefill.name="Anurag Mathews"
+              data-prefill.email="anurag.mathews@example.com"
+              data-theme.color="#FF002E"
+              id="paybtn">
+      </script>
+      <input type="hidden" custom="Hidden Element" name="hidden">
+    </form>
+    <img src="./assets/Blossom.png" alt="logo" id="logo">
+    <h2 class="sub-head">The online kindergarten</h2>
+    <p>Blossom is an online kindergarten where you can
+      teach your kids with fun just like in any other
+      kindergarten, but at the comfort and safety
+      of your home.</p>
+  </div>
+  <!-- main section of the page -->
+  <div id="main">
+    <h2 id="question">Hey Blossom, How can
+      I start teaching my kids here ?</h2>
+      <div class="boxes load-hidden" id="box1">
+        <h2 class="box-head">Step 1:</h2>
+        <p> Look for the yellow button that says
+          "Start Teaching". You will see the
+           button on the top of the page and at the bottom. </p>
+      </div>
+      <div class="boxes load-hidden" id="box2">
+        <h2 class="box-head">Step 2:</h2>
+        <p>The yellow button will open a payment form
+          which will ask you to make a payment.
+          Once you pay you will get the full access of the
+          teaching materials.</p>
+      </div>
+      <div class="boxes load-hidden" id="box3">
+        <h2 class="box-head">Step 3:</h2>
+        <p>Now that you have all the things ready, it's time
+          to have fun teaching your kids and spend some quality
+          time with them. </p>
+      </div>
+      <p id="note" class="load-hidden">Note : Hey! Mom and Dad, please don't get overexcited with this teaching thing, ok.</p>
+      <!-- <button type="button" name="start-teaching" class="yellowBtn">Start Teaching</button> -->
+      <form action="https://www.example.com/payment/success/" method="POST">
+        <script src="https://checkout.razorpay.com/v1/checkout.js"
+                data-key="rzp_test_nDLMgE8doaULb3" // Enter the Key ID generated from the Dashboard
+                data-amount="200000" // INR 200000
+                data-buttontext="Start Teaching"
+                data-name="Blossom"
+                data-description="The online Kindergarten"
+                data-image="./assets/Blossom.png"
+                data-prefill.name="Anurag Mathews"
+                data-prefill.email="anurag.mathews@example.com"
+                data-theme.color="#FF002E"
+                id="paybtn">
+        </script>
+        <input type="hidden" custom="Hidden Element" name="hidden">
+      </form>
+
+  </div>
+
+  <!-- footer section of the page -->
+  <div id="footer">
+    <p>Copyright &#0169; Blossom. All Rights Reserved.</p>
+  </div>
+</body>
+<script src="./js/scrollanimation.js"></script>
+<!-- <script type="text/javascript">
+ScrollReveal().reveal('#box1');
+ScrollReveal().reveal('#box2');
+ScrollReveal().reveal('#box3');
+</script> -->
+</html>
